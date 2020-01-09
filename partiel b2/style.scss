@@ -1,0 +1,230 @@
+$li:gray;
+$background: #353536;
+$h2:white;
+$p:gray;
+
+body{
+    background-color: $background;
+}
+
+nav{
+    background-color: $background;
+    ul{
+        font-size: 20px;
+        margin:0;
+        li{
+        
+            color: $li;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px;
+            position: relative;
+            left: 900px;
+        
+        }
+        
+    }
+    .logo img{
+        width: 70px;
+        position: absolute;
+    }
+    h1{
+        color:white;
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 13px;
+    }
+
+}
+
+
+.li2{
+    border-width:2px;
+    border-style:ridge;
+    border-color:white;
+    padding: 10px;
+    color: white;
+}
+
+.triangle1 img{
+    margin-left:600px;
+    margin-top: 30px;
+    width: 160px;
+    position: absolute;
+}
+
+.tel img{
+    position: absolute;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 700px;
+}
+
+h2{
+    color: $h2;
+}
+p{
+    color: $p;
+}
+
+.showcase{
+    margin-left: 200px;
+    margin-top: 200px;
+    position: absolute;
+
+    h2{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+.btn2 p{
+    border-width:2px;
+    border-style:ridge;
+    border-color:white;
+    color: white;
+    padding: 12px;
+    position: absolute;
+
+}
+.btn1{
+    width: 150px;
+    height: 50px;
+    background: linear-gradient(to bottom right,#46C2FF, #BD11FA);
+    border-radius: 7px;
+    margin-left: 250px;
+    margin-top: 360px;
+}
+
+.btn1 p{
+    color:white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.btn2{
+    margin-left: 500px;
+    margin-top: 350px;
+}
+
+.triangle2 img{
+    margin-top: 150px;
+    width: 200px;
+    position: absolute;
+}
+
+.partenered{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 900px;
+}
+
+.aws{
+    text-align: center;
+    width: 210px;
+    height: 90px;
+    background-color: #303030;
+    border-radius: 7%;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 230px;
+    box-shadow: 10px 5px 5px black;
+    padding: 15px;
+}
+.puma{
+    @extend .aws;
+    margin-left: 500px;
+    margin-top: 270px;
+    height: 80px;
+}
+.microsoft{
+    @extend .aws;
+    margin-left: 4px;
+    margin-top: 400px;
+    height: 70px;
+    padding: 10px;
+}
+.inkyy{
+    @extend .aws;
+    margin-top: 380px;
+    margin-left: 260px;
+}
+.nike{
+    @extend .aws;
+    margin-top: 400px;
+    margin-left: 530px;
+    height: 70px;
+}
+.disney{
+    @extend .aws;
+    margin-left: 40px;
+    margin-top: 520px;
+    height: 80px;
+}
+.converse{
+    @extend .aws;
+    margin-left: 300px;
+    margin-top: 520px;
+    height: 100px;
+}
+.itunes{
+    @extend .aws;
+    margin-left: 570px;
+    margin-top: 520px;
+    height: 70px;
+}
+
+.rond{
+    margin-top: 500px;
+    text-align: right ;
+}
+
+@mixin box{
+    width: 250px;
+    height: 300px;
+    box-shadow: 10px 4px 4px black;
+    background-color: #303030;
+    text-align: center;
+}
+
+.box2{
+    @include box;
+    margin-top: -100px;
+    margin-left: 500px;
+    position: absolute;
+
+}
+.box3{
+    @include box;
+    margin-top: 50px;
+    margin-left: 800px;
+    position: absolute;
+}
+.box4{
+    @include box;
+    margin-top: 250px;
+    margin-left: 500px;
+}
+.box5{
+    @include box;
+    margin-top: -150px;
+    margin-left: 800px;
+    position: absolute;
+}
+
+.box2 p{
+    margin-top: 150px;
+}
+.box3 p{
+    margin-top: 150px;
+}
+.box4 p{
+    margin-top: 200px;
+}
+.box5 p{
+    margin-top: 150px;
+}
